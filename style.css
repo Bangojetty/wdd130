@@ -1,0 +1,239 @@
+/*these are variable definitions for my custom colors*/
+:root {
+    --dark-slate: #1a1a2e;
+    --steel-gray: #16213e;
+    --electric-blue: #00ccff;
+    --soft-blue: #0A4382;
+    --silver: #bbbbbb;
+    --light-bg: #f0f0f0;
+    
+    /* fonts */
+    --heading-font: Georgia, 'Times New Roman', serif;
+    --body-font: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: var(--body-font);
+    background-color: var(--silver);
+    color: var(--black);
+    background-image: url('images/digital-tech-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+    background-color: black;;
+    padding: 2rem;
+    text-align: center;
+}
+
+header img {
+    max-width: 600px;
+}
+
+header h1 {
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    color: var(--light-bg);
+}
+
+nav {
+    background-color: var(--soft-blue);
+    text-align: center;
+}
+
+nav a {
+    color: var(--light-bg);
+    text-decoration: none;
+    padding: 1rem 5rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+nav a:hover {
+    background-color: var(--steel-gray);
+}
+
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+main section {
+    background-color: var(--light-bg);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--heading-font);
+    color: var(--gunmetal);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: var(--dark-slate);
+}
+
+p {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 4px;
+}
+
+.iconimg {
+    max-width: 50px;
+}
+
+#projects {
+    align-items: center;
+}
+
+#projects div a {
+    display: inline-flex;
+    background-color: var(--soft-blue);
+    align-items: center;
+    gap: 10px;
+    color: var(--light-bg);
+    padding: 0 1.5rem;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    margin: 0.5rem;
+}
+
+#projects div a:hover {
+    background-color: var(--electric-blue);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+label {
+    font-weight: bold;
+    color: var(--dark-slate);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-family: var(--body-font);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    outline: none;
+    border-color: var(--soft-blue);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button[type="submit"] {
+    background-color: #b52f25;
+    color: var(--light-bg);
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: center;
+}
+
+button[type="submit"]:hover {
+    background-color: var(--electric-blue);
+}
+
+footer {
+    background-color: var(--soft-blue);
+    color: var(--light-bg);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+    
+    nav a {
+        display: block;
+        margin: 0.5rem 0;
+    }
+    
+    main {
+        padding: 0 1rem;
+    }
+    
+    main section {
+        padding: 1rem;
+    }
+    
+    table {
+        font-size: 0.9rem;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header img {
+        max-width: 100px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+    
+    h3 {
+        font-size: 1.25rem;
+    }
+}

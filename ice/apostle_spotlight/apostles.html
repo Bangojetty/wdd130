@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        body {
+            background-color: #E8ECED;
+            font-family: Arial;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 500px;
+            height: 400px;
+            background-image: url('images/christus.webp');
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            border: 5px solid #333;
+            padding: 5px 30px 20px 30px;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-size: 24px;
+            margin: 0 0 2px 0;
+            font-weight: normal;
+        }
+
+        h2 {
+            color: white;
+            text-align: center;
+            font-size: 15px;
+            margin: 10px 0 5px 0;
+            font-weight: normal;
+        }
+
+        .presidency {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .presidency img {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+        }
+
+        .presidency img.president {
+            width: 85px;
+            height: 85px;
+        }
+
+        .apostles {
+            display: grid;
+            grid-template-columns: repeat(4, auto);
+            column-gap: 10px;
+            row-gap: 15px;
+            justify-content: center;
+        }
+
+        .apostles img {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 5px solid white;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>First Presidency</h1>
+        <div class="presidency">
+            <img src="images/oaks.webp" alt="Elder Oaks">
+            <img src="images/nelson.webp" alt="President Nelson" class="president">
+            <img src="images/eyring.webp" alt="Elder Eyring">
+        </div>
+
+        <h2>Quorum of the Twelve Apostles</h2>
+        <div class="apostles">
+            <img src="images/holland.webp" alt="Elder Holland">
+            <img src="images/uchtdorf.webp" alt="Elder Uchtdorf">
+            <img src="images/bednar.webp" alt="Elder Bednar">
+            <img src="images/cook.webp" alt="Elder Cook">
+            <img src="images/christofferson.webp" alt="Elder Christofferson">
+            <img src="images/anderson.webp" alt="Elder Anderson">
+            <img src="images/rasband.webp" alt="Elder Rasband">
+            <img src="images/stevenson.webp" alt="Elder Stevenson">
+            <img src="images/renlund.webp" alt="Elder Renlund">
+            <img src="images/gong.webp" alt="Elder Gong">
+            <img src="images/soares.webp" alt="Elder Soares">
+            <img src="images/kearon.webp" alt="Elder Kearon">
+        </div>
+    </div>
+</body>
+</html>

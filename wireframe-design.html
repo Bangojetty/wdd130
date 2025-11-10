@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Page - Design Document (Progress Check 100)</title>
+    <style>
+        /* CSS Variables for Color Scheme */
+        :root {
+            --black: #0a0908;
+            --gunmetal: #22333b;
+            --process-cyan: #30bced;
+            --penn-red: #c9443d;
+            --snow: #fffafb;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+            background-color: var(--snow);
+            color: var(--black);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: var(--penn-red);
+            text-align: center;
+            border-bottom: 3px solid var(--process-cyan);
+            padding-bottom: 10px;
+        }
+
+        h2 {
+            color: var(--gunmetal);
+            background-color: var(--process-cyan);
+            padding: 10px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: var(--penn-red);
+        }
+
+        /* Wireframe Section */
+        .wireframe {
+            border: 2px solid var(--gunmetal);
+            padding: 20px;
+            margin: 20px 0;
+            background-color: white;
+        }
+
+        .wireframe-box {
+            border: 3px solid var(--black);
+            padding: 20px;
+            margin: 15px 0;
+            text-align: center;
+            font-weight: bold;
+            background-color: white;
+            font-size: 14px;
+        }
+
+        .header-box {
+            background-color: lightgray;
+            min-height: 80px;
+        }
+
+        .nav-box {
+            background-color: lightblue;
+            padding: 15px;
+        }
+
+        .main-box {
+            background-color: white;
+            border: 3px solid var(--black);
+            min-height: 300px;
+            padding: 30px;
+            text-align: left;
+        }
+
+        .footer-box {
+            background-color: lightgray;
+            padding: 20px;
+            min-height: 60px;
+        }
+
+        /* Logo Section */
+        .logo-container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            border: 2px solid var(--gunmetal);
+            margin: 20px 0;
+        }
+
+        .logo-placeholder {
+            width: 200px;
+            height: 200px;
+            border: 3px dashed var(--process-cyan);
+            margin: 20px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: var(--gunmetal);
+        }
+
+        .logo-image {
+            max-width: 300px;
+            height: auto;
+            margin: 20px auto;
+            display: block;
+        }
+
+        /* Color Scheme Section */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .color-swatch {
+            text-align: center;
+            padding: 20px;
+            border: 2px solid var(--black);
+        }
+
+        .color-box {
+            height: 100px;
+            margin-bottom: 10px;
+            border: 1px solid var(--black);
+        }
+
+        .color-black { background-color: var(--black); }
+        .color-gunmetal { background-color: var(--gunmetal); }
+        .color-cyan { background-color: var(--process-cyan); }
+        .color-red { background-color: var(--penn-red); }
+        .color-snow { background-color: var(--snow); border: 2px solid var(--black); }
+
+        /* Font Section */
+        .font-example {
+            border: 1px solid var(--gunmetal);
+            padding: 15px;
+            margin: 10px 0;
+            background-color: white;
+        }
+
+        .font-heading {
+            font-family: Georgia, 'Times New Roman', serif;
+            font-size: 24px;
+            margin: 10px 0;
+        }
+
+        .font-body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        table, th, td {
+            border: 1px solid var(--gunmetal);
+        }
+
+        th {
+            background-color: var(--gunmetal);
+            color: var(--snow);
+            padding: 12px;
+            text-align: left;
+        }
+
+        td {
+            padding: 10px;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Portal Page Design Document - Thomas Calcote</h1>
+
+        <!-- Wireframe Section -->
+        <section>
+            <h2>1. Wireframe Design</h2>
+            <div class="wireframe">
+
+                <div class="wireframe-box header-box">
+                    HEADER
+                    <br>
+                    Logo + Title
+                </div>
+
+                <div class="wireframe-box nav-box">
+                    NAV
+                    <br>
+                    Home | WWR | ICE | About Me
+                </div>
+
+                <div class="wireframe-box main-box">
+                    MAIN
+                    <br><br>
+                    [Futuristic Technology Image]
+                    <br>
+                    Digital circuits, glowing connections, modern interface
+                    <br><br>
+                    Heading
+                    <br><br>
+                    Paragraph text
+                    <br><br>
+                    List of links
+                    <br><br>
+                    Table
+                    <br><br>
+                    Form
+                    <br><br>
+                    More images
+                </div>
+
+                <div class="wireframe-box footer-box">
+                    FOOTER
+                    <br>
+                    Copyright info
+                </div>
+            </div>
+        </section>
+
+        <!-- Logo Section -->
+        <section>
+            <h2>2. Logo Design</h2>
+            <div class="logo-container">
+                <h3>Portal Page Logo</h3>
+                <img src="images/tec-logo-1.png" alt="Portal Page Logo" class="logo-image">
+            </div>
+        </section>
+
+        <!-- Color Scheme Section -->
+        <section>
+            <h2>3. Color Scheme</h2>
+
+            <div class="color-grid">
+                <div class="color-swatch">
+                    <div class="color-box color-black"></div>
+                    <h4>Black</h4>
+                    <p><strong>HEX:</strong> #0a0908</p>
+                    <p><strong>RGB:</strong> 10, 9, 8</p>
+                    <p><strong>Use:</strong> Primary text, accents</p>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box color-gunmetal"></div>
+                    <h4>Gunmetal</h4>
+                    <p><strong>HEX:</strong> #22333b</p>
+                    <p><strong>RGB:</strong> 34, 51, 59</p>
+                    <p><strong>Use:</strong> Header, footer, headings</p>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box color-cyan"></div>
+                    <h4>Process Cyan</h4>
+                    <p><strong>HEX:</strong> #30bced</p>
+                    <p><strong>RGB:</strong> 48, 188, 237</p>
+                    <p><strong>Use:</strong> Navigation, links, accents</p>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box color-red"></div>
+                    <h4>Subtle Red</h4>
+                    <p><strong>HEX:</strong> #c9443d</p>
+                    <p><strong>RGB:</strong> 201, 68, 61</p>
+                    <p><strong>Use:</strong> Call-to-action, highlights</p>
+                </div>
+
+                <div class="color-swatch">
+                    <div class="color-box color-snow"></div>
+                    <h4>Snow</h4>
+                    <p><strong>HEX:</strong> #fffafb</p>
+                    <p><strong>RGB:</strong> 255, 250, 251</p>
+                    <p><strong>Use:</strong> Background, card backgrounds</p>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Font Section -->
+        <section>
+            <h2>4. Font Choices</h2>
+
+            <div class="font-example">
+                <h3>Heading Font</h3>
+                <div class="font-heading">
+                    Georgia, Times New Roman, serif
+                </div>
+                <p class="font-heading">The quick brown fox jumps over the lazy dog</p>
+                <p class="font-heading">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p class="font-heading">abcdefghijklmnopqrstuvwxyz</p>
+                <p class="font-heading">1234567890</p>
+                <p><strong>Use for:</strong> h1, h2, h3, h4, h5, h6 elements</p>
+            </div>
+
+            <div class="font-example">
+                <h3>Body Font</h3>
+                <div class="font-body">
+                    Arial, Helvetica, sans-serif
+                </div>
+                <p class="font-body">The quick brown fox jumps over the lazy dog</p>
+                <p class="font-body">ABCDEFGHIJKLMNOPQRSTUVWXYZ</p>
+                <p class="font-body">abcdefghijklmnopqrstuvwxyz</p>
+                <p class="font-body">1234567890</p>
+                <p><strong>Use for:</strong> paragraphs, navigation, body text</p>
+            </div>
+
+        </section>
+
+        <!-- Summary Section -->
+        <section>
+            <h2>5. Design Summary</h2>
+            <ul>
+                <li><strong>Layout:</strong> Header, Navigation, Main Content (Grid), Footer</li>
+                <li><strong>Color Palette:</strong> 5 colors - Black, Gunmetal, Process Cyan, Penn Red, Snow</li>
+                <li><strong>Typography:</strong> Georgia for headings, Arial for body text</li>
+                <li><strong>Navigation Links:</strong> Home, WWR, ICE, About Me</li>
+                <li><strong>Required Elements:</strong> h1-h6, p, a, img, ul, table, form</li>
+                <li><strong>Content Approach:</strong> Professional portfolio style with clean, modern design</li>
+            </ul>
+        </section>
+
+    </div>
+</body>
+</html>
